@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script  src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    
+    <script  src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+    <script  src="js/knockback-full-stack.js"></script>
+
+    <script  src="js/models/item.js"></script>
+    <script  src="js/collections/items.js"></script>
+    <script  src="js/models/setup.js"></script>
+
+</head>
+<body>
+  <div class="body row">
+    <div class="left-pane col-md-2">
+      
+      test
+    </div>
+    <div class="right-pane col-md-10">
+      <div id="kb_collection" data-bind="foreach: items">
+        <div>
+          <p data-bind="text: $data.name">
+          </p>
+        </div>
+      </div>
+      test
+    </div>
+  </div>  
+</body>
+</html>
